@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Pokemora</title>
+  <desc id="desc">Gengar sonríe mientras come una mora.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#142936"/><stop offset="1" stop-color="#07141d"/></linearGradient>
+    <linearGradient id="ghost" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bd6cff"/><stop offset="1" stop-color="#6731ab"/></linearGradient>
+    <linearGradient id="berry" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e64fb0"/><stop offset="1" stop-color="#75236f"/></linearGradient>
+  </defs>
+  <rect x="3" y="3" width="122" height="122" rx="28" fill="url(#bg)" stroke="#57f6d2" stroke-opacity=".7" stroke-width="2"/>
+  <path d="m18 42 11 3-7-18 20 8 5-20 15 15 13-19 8 23 20-7-6 20 18 9-18 10 8 18-21-4-5 21-16-13-16 14-4-21-22 5 8-20-19-9Z" fill="url(#ghost)" stroke="#e5baff" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M37 49q9-11 22-2l-3 15-16-2Zm54-1q-9-11-22-2l3 15 16-2Z" fill="#fff3ac" stroke="#351b57" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="48" cy="54" rx="3.6" ry="5.4" fill="#f34d69"/><ellipse cx="80" cy="54" rx="3.6" ry="5.4" fill="#f34d69"/>
+  <path d="M48 73q15-9 32 0-4 19-16 19T48 73Z" fill="#321746" stroke="#421c5e" stroke-width="2"/>
+  <path d="m53 74 7 2-4 7Zm22 0-7 2 4 7Z" fill="#fff4ed"/>
+  <path d="M39 90q13-8 24 1l-2 14q-15 4-24-5Z" fill="#8d49ca" stroke="#e5baff" stroke-width="2"/>
+  <path d="M56 88q14-8 25 0l-1 13q-14 7-26-2Z" fill="url(#berry)" stroke="#ffc1ec" stroke-width="2"/>
+  <circle cx="62" cy="94" r="4" fill="#f48bcf"/><circle cx="72" cy="92" r="4" fill="#dc6dbd"/><circle cx="77" cy="99" r="4" fill="#f48bcf"/><circle cx="66" cy="101" r="4" fill="#c957aa"/>
+  <path d="m66 87 2-8 5 5 7-2-3 7" fill="#8ce777" stroke="#dcffb0" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="m48 102-5 8m39-8 5 7" stroke="#e5baff" stroke-width="3" stroke-linecap="round"/>
+</svg>
+

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#06121a">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' https://raw.githubusercontent.com; media-src https://raw.githubusercontent.com; connect-src https://pokeapi.co; font-src 'self'; form-action 'none'; frame-src 'none'; worker-src 'none'; manifest-src 'none'">
+  <meta http-equiv="Referrer-Policy" content="no-referrer">
+  <meta name="description" content="Pokemora: Pokédex táctica interactiva en español, impulsada por PokéAPI.">
+  <link rel="icon" type="image/svg+xml" href="assets/pokemora-logo.svg">
+  <title>Pokemora // Pokédex táctica</title>
+  <link rel="stylesheet" href="assets/pokedex.css">
+</head>
+<body>
+  <div class="topline"><span id="system-state">POKEMORA // INICIALIZANDO</span> · BASE BIOLÓGICA EN INICIALIZACIÓN</div>
+  <header><a href="#inicio" class="brand"><img class="brand-icon" src="assets/pokemora-logo.svg" alt=""> POKEMORA</a><nav class="topnav" aria-label="Navegación principal"><a href="#pokedex">Índice</a><a href="#pokedex" id="nav-favorites">Registros guardados</a><a href="https://pokeapi.co/docs/v2" target="_blank" rel="noopener noreferrer">Fuente de datos ↗</a></nav><button id="random-btn" class="top-action">Escaneo aleatorio ↗</button></header>
+  <section class="hero" id="inicio"><div><div class="kicker">SISTEMA BIOLÓGICO · N.º 001 — 1.025</div><h1>Acceso al<br><em>Pokéverso.</em></h1><p>Interfaz táctica de exploración Pokémon. Analiza especies, tipos y datos de campo en una base de datos viva.</p><a class="hero-cta" href="#pokedex">Iniciar escaneo <span>↓</span></a></div><div class="hero-art"><div class="orb"></div><div class="hero-index" id="hero-index">TACTICAL SCAN / READY</div><img class="hero-mon" id="hero-mon" alt="Pokémon destacado"><div class="hero-label">ESPECIMEN EN FOCO · <b id="hero-name">CARGANDO…</b></div><span class="deco" aria-hidden="true">✳</span></div></section>
+  <div class="ticker" aria-hidden="true"><div><span>✳ BIO-SCAN / LIVE</span><span>✳ LECTURA DE TIPOS</span><span>✳ ARCHIVO DE ESPECIES</span><span>✳ INTERFAZ DEX ACTIVA</span><span>✳ BIO-SCAN / LIVE</span><span>✳ LECTURA DE TIPOS</span><span>✳ ARCHIVO DE ESPECIES</span></div></div>
+  <main id="pokedex"><div class="dex-head"><div><div class="kicker">BIOMETRIC INDEX / NATIONAL DEX</div><h2>Banco de datos</h2></div><div class="dex-count" id="dex-count">Conectando con PokéAPI…</div></div>
+    <div class="controls"><div class="search-wrap"><span class="search-glyph" aria-hidden="true">⌕</span><label class="sr-only" for="search">Buscar Pokémon por nombre o número</label><input class="control" id="search" type="search" placeholder="Buscar espécimen / ID…" autocomplete="off"></div><label class="sr-only" for="generation">Filtrar por generación</label><select class="control" id="generation"><option value="all">TODAS LAS GENERACIONES</option><option value="1">GEN I · KANTO</option><option value="2">GEN II · JOHTO</option><option value="3">GEN III · HOENN</option><option value="4">GEN IV · SINNOH</option><option value="5">GEN V · TESELIA</option><option value="6">GEN VI · KALOS</option><option value="7">GEN VII · ALOLA</option><option value="8">GEN VIII · GALAR</option><option value="9">GEN IX · PALDEA</option></select><label class="sr-only" for="type">Filtrar por tipo</label><select class="control" id="type"><option value="all">TODOS LOS TIPOS</option><option value="normal">Normal</option><option value="fire">Fuego</option><option value="water">Agua</option><option value="electric">Eléctrico</option><option value="grass">Planta</option><option value="ice">Hielo</option><option value="fighting">Lucha</option><option value="poison">Veneno</option><option value="ground">Tierra</option><option value="flying">Volador</option><option value="psychic">Psíquico</option><option value="bug">Bicho</option><option value="rock">Roca</option><option value="ghost">Fantasma</option><option value="dragon">Dragón</option><option value="dark">Siniestro</option><option value="steel">Acero</option><option value="fairy">Hada</option></select><label class="sr-only" for="sort">Ordenar Pokémon</label><select class="control" id="sort"><option value="id-up">ID · ASCENDENTE</option><option value="id-down">ID · DESCENDENTE</option><option value="name-up">NOMBRE · A—Z</option><option value="name-down">NOMBRE · Z—A</option></select></div>
+    <div class="dex-tools"><p id="results-label">Cargando especies…</p><button class="toggle" id="favorites-toggle" aria-pressed="false">♡ Ver favoritos <span id="favorites-count">0</span></button></div><div class="status" id="status" role="status" aria-live="polite">Cargando la Pokédex…</div><div class="grid" id="grid" aria-live="polite"></div><nav class="pagination" id="pagination" aria-label="Páginas de la Pokédex"></nav>
+  </main><footer class="credit">Datos e imágenes de <a href="https://pokeapi.co/" target="_blank" rel="noopener noreferrer">PokéAPI</a> · Proyecto fan no oficial de Pokémon</footer>
+  <div class="modal-backdrop" id="modal-backdrop" role="presentation" aria-hidden="true"><section class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-name"><button class="modal-close" id="modal-close" aria-label="Cerrar ficha">×</button><div id="modal-content"></div></section></div>
+  <script defer src="src/model.js"></script>
+  <script defer src="src/view.js"></script>
+  <script defer src="src/controller.js"></script>
+</body>
+</html>
+
